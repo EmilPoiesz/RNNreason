@@ -42,7 +42,7 @@ def sample_one_rule(preds):
 def sample_rule_priority(preds):
     pred_num = len(preds)
     rule_num = random.randint(0, 4 * pred_num)
-    fact_num = random.randint(0, pred_num)
+    fact_num = random.randint(1, pred_num)
 
     cache = set()
     rules = []

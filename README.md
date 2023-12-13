@@ -1,3 +1,21 @@
+# This project is an extention of https://github.com/joshuacnf/paradox-learning2reason
+
+I have added code for training RNN/GRU/LSTM models on the same dataset. To train a model you
+need to supply the model_type argument ("rnn", "gru", or "lstm"), optionally you can
+add the num_layers argument (--num_layers=1) and choose to train or evaluate or both with
+--do_train and --do_eval.
+
+```
+python rnn_model.py --model_type="rnn" --do_train --do_eval
+```
+
+The enviroment also need to have these libraries installed:
+```
+pip install torch torchmetrics
+```
+
+Below is the original README from the original project (https://github.com/joshuacnf/paradox-learning2reason)
+
 # On the Paradox of Learning to Reason from Data
 
 This repo provides code for reproducing the experiments in the paper [On the Paradox of Learning to Reason from Data](http://web.cs.ucla.edu/~hzhang19/files/on-the-paradox.pdf). We provide code for
